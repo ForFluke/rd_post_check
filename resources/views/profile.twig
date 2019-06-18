@@ -1,0 +1,40 @@
+
+    {% include 'header.twig' %}
+    <body class="login-page">
+
+<div class="col-xs-12 col-sm-12">
+    <div class="card profile-card">
+        <div class="profile-header">&nbsp;</div>
+            <div class="profile-body">
+                <div class="image-area">
+                    <img src="https://gurayyarar.github.io/AdminBSBMaterialDesign/images/user-lg.jpg" alt="AdminBSB - Profile Image">
+                </div>
+                <div class="content-area">
+                    <h3>{{ user.fullname }}</h3>
+                    <p>{{ user.tell }}</p>
+                    <p>{{ user.email }}</p>
+                </div>
+            </div>
+            <div class="profile-footer">
+                <ul>
+                    <li>
+                        <span>NAME </span>
+                        <span>{{ user.fullname }}</span>
+                    </li>
+                    <li>
+                        <span>Tell</span>
+                        <span>{{ user.tell }}</span>
+                    </li>
+                    <li>
+                        <span>E-mail</span>
+                        <span>{{ user.email }}</span>
+                    </li>
+                </ul>
+            </div>
+            <button class="btn btn-block bg-pink waves-effect" type="button" onClick="next_home_page()">Go to Home page</button>
+
+        </div>
+        
+    </div>
+
+   {% include 'footer.twig' %}
